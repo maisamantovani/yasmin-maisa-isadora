@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas Doces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-gradient" id="brandTitle">Nosso Blog de Recitinhas</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Início</a>
+          <a href="doces.html">Doces</a>
+          <a href="salgadas.html">Salgadas</a>
+          <a href="sucos.html">Sucos</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" type="button">🌙 Modo Escuro</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="card">
+        <p class="eyebrow">Categoria</p>
+        <h1>Receitas Doces</h1>
+        <p class="lead">Doces simples, fofos e perfeitos para iniciantes que querem aprender com praticidade.</p>
+        <input id="searchInput" class="search-input" type="search" placeholder="Busque por brigadeiro, bolo ou pudim" />
+      </section>
+
+      <section class="recipe-grid">
+        <article class="recipe-card" data-search="brigadeiro doce leite condensado chocolate fácil">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Brigadeiro pronto" />
+          <h2>Brigadeiro</h2>
+          <p>Um doce clássico, rápido e muito querido por todos.</p>
+          <ul class="meta-list"><li>Tempo: 20 min</li><li>Rendimento: 18 unidades</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>1 lata de leite condensado</li><li>1 colher de sopa de manteiga</li><li>3 colheres de sopa de chocolate em pó</li><li>Chocolate granulado para enrolar</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Coloque tudo em uma panela e cozinhe em fogo baixo.</li><li>Mexa sem parar até desgrudar do fundo.</li><li>Deixe esfriar e enrole em bolinhas.</li><li>Passe no granulado e sirva.</li></ol>
+          <h3>Dicas</h3>
+          <p>Se a massa ficar muito mole, deixe descansar por 10 minutos antes de enrolar.</p>
+          <div class="reaction-group">
+            <button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button>
+          </div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="bolo cenoura doce simples fofinho">
+          <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=900&q=80" alt="Bolo de Cenoura" />
+          <h2>Bolo de Cenoura</h2>
+          <p>Um bolo fofinho e perfumado, ótimo para a hora do café.</p>
+          <ul class="meta-list"><li>Tempo: 40 min</li><li>Rendimento: 12 fatias</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>3 cenouras médias</li><li>4 ovos</li><li>1 xícara de óleo</li><li>2 xícaras de farinha de trigo</li><li>2 xícaras de açúcar</li><li>1 colher de sopa de fermento</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Bata cenoura, ovos e óleo no liquidificador.</li><li>Misture com açúcar e farinha.</li><li>Adicione o fermento e leve ao forno.</li><li>Sirva com cobertura de chocolate ou açúcar.</li></ol>
+          <h3>Dicas</h3>
+          <p>Use cenoura bem madura para um bolo mais doce e aromático.</p>
+          <div class="reaction-group">
+            <button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button>
+          </div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="pudim leite condensado caramelizado doce fácil">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Pudim caramelizado" />
+          <h2>Pudim</h2>
+          <p>Uma sobremesa clássica com textura cremosa e caramelo delicado.</p>
+          <ul class="meta-list"><li>Tempo: 45 min</li><li>Rendimento: 8 porções</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>1 lata de leite condensado</li><li>1 lata de leite</li><li>3 ovos</li><li>1 xícara de açúcar para caramelar</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Caramelize o açúcar em uma forma.</li><li>Bata os ingredientes no liquidificador.</li><li>Despeje na forma e leve ao banho-maria.</li><li>Espere esfriar e desenforme com cuidado.</li></ol>
+          <h3>Dicas</h3>
+          <p>Deixe o pudim gelar bem antes de servir, para ficar firme.</p>
+          <div class="reaction-group">
+            <button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button>
+            <button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button>
+          </div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-wrap"><p>Autor: Maria Helena</p><p>Data: 09/06/2026</p></div></footer>
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

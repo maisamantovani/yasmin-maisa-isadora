@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas Salgadas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-gradient" id="brandTitle">Nosso Blog de Recitinhas</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Início</a>
+          <a href="doces.html">Doces</a>
+          <a href="salgadas.html">Salgadas</a>
+          <a href="sucos.html">Sucos</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" type="button">🌙 Modo Escuro</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="card">
+        <p class="eyebrow">Categoria</p>
+        <h1>Receitas Salgadas</h1>
+        <p class="lead">Opções práticas para um almoço saboroso ou um lanche especial em casa.</p>
+        <input id="searchInput" class="search-input" type="search" placeholder="Busque por torta, pão ou escondidinho" />
+      </section>
+
+      <section class="recipe-grid">
+        <article class="recipe-card" data-search="torta frango salgada prato fácil">
+          <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=900&q=80" alt="Torta de Frango" />
+          <h2>Torta de Frango</h2>
+          <p>Recheio cremoso, massa crocante e uma receita muito querida no dia a dia.</p>
+          <ul class="meta-list"><li>Tempo: 50 min</li><li>Rendimento: 8 fatias</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>2 peitos de frango cozidos e desfiados</li><li>1 cebola picada</li><li>2 colheres de sopa de azeite</li><li>1 caixa de creme de leite</li><li>1 massa pronta para torta</li><li>Sal e temperos a gosto</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Refogue a cebola no azeite.</li><li>Adicione o frango, o creme de leite e os temperos.</li><li>Recheie a massa e cubra com a outra metade.</li><li>Leve ao forno até dourar.</li></ol>
+          <h3>Dicas</h3>
+          <p>Use milho ou palmito para deixar o recheio ainda mais especial.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="pao queijo salgada lanche fácil">
+          <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=80" alt="Pão de Queijo" />
+          <h2>Pão de Queijo</h2>
+          <p>Macio por dentro, crocante por fora e perfeito para o café da manhã.</p>
+          <ul class="meta-list"><li>Tempo: 35 min</li><li>Rendimento: 18 unidades</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>500 g de polvilho azedo</li><li>2 xícaras de leite</li><li>1/2 xícara de óleo</li><li>2 ovos</li><li>200 g de queijo ralado</li><li>Sal a gosto</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Ferva o leite com o óleo e o sal.</li><li>Despeje sobre o polvilho e misture bem.</li><li>Adicione os ovos e o queijo, modelando bolinhas.</li><li>Asse até dourar.</li></ol>
+          <h3>Dicas</h3>
+          <p>Se a massa estiver firme demais, acrescente um pouco de leite.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="escondidinho frango batata salgada almoço fácil">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80" alt="Escondidinho de Frango" />
+          <h2>Escondidinho</h2>
+          <p>Camadas de purê e frango com um toque cremoso e reconfortante.</p>
+          <ul class="meta-list"><li>Tempo: 45 min</li><li>Rendimento: 6 porções</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>500 g de batata</li><li>2 colheres de manteiga</li><li>1 xícara de leite</li><li>500 g de frango desfiado</li><li>1 tomate picado</li><li>Queijo ralado a gosto</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Faça um purê cremoso com batata, leite e manteiga.</li><li>Refogue o frango com tomate e temperos.</li><li>Monte camadas em uma assadeira.</li><li>Finalize com queijo e leve ao forno.</li></ol>
+          <h3>Dicas</h3>
+          <p>Você pode usar carne moída em vez de frango para variar.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-wrap"><p>Autor: isadora lerner, maisa mantovani e yasmin froes</p><p>Data: 09/06/2026</p></div></footer>
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

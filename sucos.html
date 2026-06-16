@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sucos Naturais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-gradient" id="brandTitle">Nosso Blog de Recitinhas</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Início</a>
+          <a href="doces.html">Doces</a>
+          <a href="salgadas.html">Salgadas</a>
+          <a href="sucos.html">Sucos</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" type="button">🌙 Modo Escuro</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="card">
+        <p class="eyebrow">Categoria</p>
+        <h1>Sucos Naturais</h1>
+        <p class="lead">Bebidas refrescantes e nutritivas para qualquer hora do dia.</p>
+        <input id="searchInput" class="search-input" type="search" placeholder="Busque por laranja, abacaxi ou morango" />
+      </section>
+
+      <section class="recipe-grid">
+        <article class="recipe-card" data-search="suco laranja natural bebida refrescante">
+          <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=900&q=80" alt="Suco de Laranja" />
+          <h2>Suco de Laranja</h2>
+          <p>Leve, fresco e cheio de vitamina C para começar o dia com energia.</p>
+          <ul class="meta-list"><li>Tempo: 10 min</li><li>Rendimento: 2 copos</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>4 laranjas</li><li>1 colher de sopa de mel (opcional)</li><li>Gelo a gosto</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Esprema as laranjas.</li><li>Coe o suco para retirar as sementes.</li><li>Adicione mel se quiser mais doce.</li><li>Sirva com gelo.</li></ol>
+          <h3>Dicas</h3>
+          <p>Use frutas geladas para deixar a bebida ainda mais refrescante.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="suco abacaxi hortela natural bebida refrescante">
+          <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=900&q=80" alt="Suco de Abacaxi com Hortelã" />
+          <h2>Suco de Abacaxi com Hortelã</h2>
+          <p>Uma combinação tropical, refrescante e muito agradável.</p>
+          <ul class="meta-list"><li>Tempo: 10 min</li><li>Rendimento: 2 copos</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>2 fatias de abacaxi</li><li>1 punhado de hortelã</li><li>1 colher de sopa de açúcar ou mel</li><li>Água gelada</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Bata o abacaxi com a hortelã e a água.</li><li>Adicione o adoçante e bata mais um pouco.</li><li>Coe, se preferir, e sirva com gelo.</li></ol>
+          <h3>Dicas</h3>
+          <p>Use abacaxi bem maduro para um sabor mais intenso.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+
+        <article class="recipe-card" data-search="suco morango natural bebida doce">
+          <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80" alt="Suco de Morango" />
+          <h2>Suco de Morango</h2>
+          <p>Um suco rosado e delicioso, perfeito para acompanhar o lanche.</p>
+          <ul class="meta-list"><li>Tempo: 8 min</li><li>Rendimento: 2 copos</li></ul>
+          <h3>Ingredientes</h3>
+          <ul><li>1 xícara de morangos lavados</li><li>1 copo de água gelada</li><li>1 colher de sopa de mel</li><li>Gelo</li></ul>
+          <h3>Modo de preparo</h3>
+          <ol><li>Bata o morango com a água e o mel.</li><li>Coe para deixar a bebida mais suave.</li><li>Sirva com gelo e aproveite.</li></ol>
+          <h3>Dicas</h3>
+          <p>Use morangos congelados para deixar o suco mais geladinho.</p>
+          <div class="reaction-group"><button class="reaction-btn" data-reaction="gostei">❤️ Gostei <span data-count>0</span></button><button class="reaction-btn" data-reaction="delicia">😋 Delícia <span data-count>0</span></button><button class="reaction-btn" data-reaction="vou-fazer">🤩 Vou Fazer <span data-count>0</span></button></div>
+          <form class="comment-form" data-comment-form>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <textarea name="comment" placeholder="Escreva um comentário" required></textarea>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+          <ul class="comment-list" data-comments></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-wrap"><p>Autor: isadora lerner, maisa mantovani e yasmin froes</p><p>Data: 09/06/2026</p></div></footer>
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

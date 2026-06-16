@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Blog de Recitinhas</title>
+    <meta name="description" content="Blog de culinária com receitas doces, salgadas e sucos naturais." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-gradient" id="brandTitle">Nosso Blog de Recitinhas</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Início</a>
+          <a href="doces.html">Doces</a>
+          <a href="salgadas.html">Salgadas</a>
+          <a href="sucos.html">Sucos</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" type="button">🌙 Modo Escuro</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow">Receitas fáceis, saborosas e cheias de carinho</p>
+          <h1>Descubra receitas simples para começar a cozinhar com alegria.</h1>
+          <p class="lead">Aqui você encontra receitas doces, salgadas, sucos naturais e dicas práticas para qualquer iniciante.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="doces.html">Ver receitas doces</a>
+            <a class="btn btn-secondary" href="sucos.html">Ver sucos naturais</a>
+          </div>
+        </div>
+        <aside class="mini-card">
+          <h2>Visitas</h2>
+          <p id="visitCounter">0 visitas</p>
+          <small>Seu número de visitas é salvo no navegador.</small>
+        </aside>
+      </section>
+
+      <section class="card carousel-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Destaques do mês</p>
+            <h2>Carrossel de receitas</h2>
+          </div>
+        </div>
+        <div class="carousel" aria-label="Carrossel de receitas e bebidas">
+          <article class="slide active">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Mesa com frutas e receitas" />
+            <div class="slide-caption">Receitas coloridas para deixar a cozinha mais alegre.</div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80" alt="Pudim e sobremesa" />
+            <div class="slide-caption">Doces simples e irresistíveis para qualquer ocasião.</div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80" alt="Sucos naturais" />
+            <div class="slide-caption">Sucos naturais fresquinhos e cheios de energia.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Encontre rápido</p>
+            <h2>Busca de receitas</h2>
+          </div>
+        </div>
+        <input id="searchInput" class="search-input" type="search" placeholder="Procure por brigadeiro, torta, suco..." />
+        <p class="hint">Filtre receitas em tempo real na página.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Receitas em destaque</p>
+            <h2>Receitas recentes</h2>
+          </div>
+        </div>
+        <div class="recipe-grid">
+          <article class="recipe-card highlight-card" data-search="brigadeiro doce receita fácil">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Brigadeiro" />
+            <h3>Brigadeiro</h3>
+            <p>Doce clássico com apenas três ingredientes e sabor irresistível.</p>
+            <a class="btn btn-primary" href="doces.html">Ver receita</a>
+          </article>
+          <article class="recipe-card highlight-card" data-search="torta frango salgada fácil">
+            <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=900&q=80" alt="Torta de Frango" />
+            <h3>Torta de Frango</h3>
+            <p>Uma opção prática, cremosa e ótima para o almoço da família.</p>
+            <a class="btn btn-primary" href="salgadas.html">Ver receita</a>
+          </article>
+          <article class="recipe-card highlight-card" data-search="suco laranja natural bebida">
+            <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=900&q=80" alt="Suco de Laranja" />
+            <h3>Suco de Laranja</h3>
+            <p>Refrescante, natural e perfeito para começar o dia com energia.</p>
+            <a class="btn btn-primary" href="sucos.html">Ver receita</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="card grid-two">
+        <article class="mini-card">
+          <h3>Explore por categoria</h3>
+          <ul class="list-links">
+            <li><a href="doces.html">Doces</a></li>
+            <li><a href="salgadas.html">Salgadas</a></li>
+            <li><a href="sucos.html">Sucos</a></li>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+          </ul>
+        </article>
+        <article class="mini-card">
+          <h3>Por que esse blog existe?</h3>
+          <p>Nosso objetivo é mostrar receitas fáceis, práticas e deliciosas para que qualquer pessoa possa cozinhar com confiança.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Autor: isadora lerner, maisa mantovani e yasmin froes</p>
+        <p>Data: 09/06/2026</p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
